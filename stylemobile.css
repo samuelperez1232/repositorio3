@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu:wght@300&display=swap');
+/*selector universal*/
+
+{padding: 0;
+margin: 0;
+font-family:tahoma,sans-serif; 
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+
+/*  nav */
+
+nav{background-color:rgba(125, 155, 118,0.7);
+list-style-type:none;
+text-decoration-line:none;
+font-size:2.5rem;
+font-family: tahoma,sans-serif;
+font-weight:500;
+grid-area: nav;
+}
+
+
+/*  main */
+
+main{
+	background:rgba(196, 226, 200,0.5);
+	padding: 60px;
+		color:grey;
+font-size: 1.5rem;
+font-family:tahoma,sans-serif; 
+font-weight: 700; 
+grid-area: main;
+}
+
+
+/* footer */
+
+
+footer{
+	color: rgb(255,255,255 );
+	background:rgba(6,6,6);
+	padding: 40px;
+	font-size: 1.5rem;
+font-family:tahoma,sans-serif; 
+font-weight: 700;
+grid-area: footer; 
+}
+
+body{
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows:15vh 60vh 25vh;
+	grid-template-areas: "nav" "main" 
+	"footer";
+}
+
+@media only screen and (mind-width:768px){
+	body{
+		grid-template-columns:repeat(3,1fr);
+
+	grid-template-rows:10vh 75vh 15vh ;
+
+	grid-template-areas: "nav nav nav"
+	"main main main" " footer footer footer"
+	}
+}
+@media only screen and (mind-width:1024px){
+	body{
+		grid-template-columns:10vw 70vw 20vw;
+		grid-template-rows:10vh 75vh 15vh ;
+
+	grid-template-areas: "nav nav nav"
+	"main main main" " footer footer footer"
+	}
+}
+
+
+/*transformaciones y animaciones*/
+.linear-gradient{
+background: linear-gradient(90deg, rgba(187,196,37,1)
+ 0%, rgba(83,207,105,1) 70%, rgba(16,255,87,1) 100%);
+}
