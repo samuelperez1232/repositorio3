@@ -1,37 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>clase 1 html. coder</title>
-</head>
-<body>
-	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus modi ipsum <i>ex fugiat debitis, aliquam ducimus, </i> ex fugiat debitis, aliquam ducimus, ipsam accusantium officia! Dolorem repellendus esse aliquam autem ullam sed doloribus!</p>
-	<br>
-	<hr>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis explicabo, eos quia voluptate nesciunt aperiam sequi numquam assumenda tenetur optio molestias ea a officiis ducimus nisi illo molestiae exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolorum recusandae, <em>tenetur similique a, obcaecati modi laborum, deserunt neque maiores,</em> Dolor laboriosam optio commodi, provident eligendi aspernatur iusto natus.</p>
-	<p></p>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FINCAS PAISAS</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+	</head>
+	<body>
+		
+			<nav id="nav">
+				<div class="encabezado__box--green linear-gradient2">
+					<a href="index.html">
+             			<img class="img1"  	src="imagenes/logorecorte2.png" alt="">
+                	
+		     		</a>
+    			</div>
+ 				
+				<div >
+					<ol>
+	   					<li>
+							<a href="NOSOTROS.html">    NOSOTROS</a>
+						</li>
+						<li> 
+							<a href="RESERVAR.html"> 	RESERVAR</a>
+						</li>
+						<li>
+							<a href="PUBLICATUFINCA.html">PUBLICA TU FINCA</a>
+						</li>
+						<li>
+							<a href="CONTACTANOS.html">CONTACTANOS</a>
+						</li> 
+					</ol>
+				</div>
+			</nav>
+		<header>
+	   		<div id="header">
+	   			<a href="reservar.html">
+					<img class="encabezado__imagen--fluid invisible"  src="../imagenes/fincaheader.jpg" 	alt="">
+                </a>
+		   </div>
+		</header>
+	<main class="grid pie2" id="contenido">
+		<section>
+	   	 	<div class="container  justify-content pie linear-gradient"id="filtros">
+	   			<div>
+					<h3 class=" municipio__seccion "> MUNICIPIO</h3>
+		    		<select name="Municipio" id="municipio"class="municipio__select">
+			            <option value="antioquia">San jeronimo</option>
+			            <option value="antioquia">Santa fé</option>
+			            <option value="antioquia">Guatapé</option>
+			            <option value="antioquia">Jardín</option>
+					</select>
+				</div>
+				<div>
+			 		 <h3 class="fecha__seccion "> FECHA DE INGRESO</h3>
+					<select name="fecha ingreso" id="fecha ingreso" class="fecha__select">
+			   		<option value="antioquia">1 ER SEMESTRE</option>
+			   		<option value="antioquia">2DO SEMESTRE DEL AÑO</option>
+			
+					</select>
+				</div>
+				<div>
+					<h3 class="fechasali__seccion text-center">FECHA DE SALIDA</h3>
+					<select name="fecha salida" id="fecha salida"
+						class="fecha__select" >
+						<option value="antioquia">1 ER SEMESTRE</option>
+			   			<option value="antioquia">2DO SEMESTRE DEL AÑO</option>
+					</select> 
+				</div>
+				<div>
+					<h3 class="numero__seccion"> NÚMERO DE PERSONAS</h3>
+					<select name="n personas" id="n personas" class="numero__select">
+			   	 		<option value="antioquia">1-5</option>
+			   	 		<option value="antioquia">5-10</option>
+			   			<option value="antioquia">11-15</option>
+			  	 		<option value="antioquia">16-20+</option>
 
-	<h1>encabezado mayor</h1>
-    <h2>encabezado menor</h2>
-	<h3>encabezado mas peque</h3>
+					</select>
+			 </div>
+		 		<div>
+					<h3 class="presupuesto__seccion"> PRESUPUESTO</h3>
+					<select name="presupuesto" id="presupuesto" class="presupuesto__select">
+			   		<option value="antioquia">500.000-1.000.000 cop</option>
+					<option value="antioquia">1.100.000-1.600.000cop</option>	    	
+					<option value="antioquia">1.700.000-2.300.000cop</option>
+			   	    <option value="antioquia">2.300.000+</option>
+					</select> 
+				</div>
+			</div>
+						<br>
+						<br>
+						<input type="submit"value="BUSCAR">
+		</section>
+			
+				<section class="section__box--green" >
+					<article>
+						<h1 class=" wow animate__flipInX text-center">POPULARES </h1>
+							<br>
+						    <br>
+						<div class="container justify-content pie" >
+							<div class="box flex-grow1">
+								<figure>
+									<a href="FINCA SELECCIONADA POPULAR">
+               		 				<img  src="imagenes/fincapopular1.jpg"class="popularesfavorable__imagen1 scale" ></a>
+		     						<figcaption>
+		    			 				<p>
+		    			 					Finca Gloria
+		    			 					<br>
+		    			 		
+		    			 					Sopetrán
+		    			 					<br>
+		    			 	
+		    			 					12 personas
+		    			 					<br>
+		    			 					$1.400.000cop
+		    			 				</p>
+		    			 			</figcaption>
+		    			 	 </figure>
+		    				</div>
+		    			<div class=" box flex-grow2">
+							<figure>
+								<a href="FINCA SELECCIONADA POPULAR">
+               		 			<img  src="imagenes/fincapopular2.jpg"alt class="popularesfavorable__imagen2 scale"></a>
+		     					<figcaption>
+		    			 			<p>
+		    			 				Finca RosaLinda
+		    			 				<br>
+		    			 		
+		    			 				Guatapé
+		    			 				<br>
+		    			 	
+		    			 				15 personas
+		    			 				<br>
+		    			 				$1.700.000cop
+		    			 			</p>
+		    			 		</figcaption>
+		    			  	</figure>
+		    			</div>
+		    			<div class=" box flex-grow2">
+							<figure>
+								<a href="FINCA SELECCIONADA POPULAR">
+               		 			<img  src="imagenes/fincapopular3.jpg"alt class="popularesfavorable__imagen2 scale"></a>
+		     					<figcaption>	
+		    			 				<p>Finca La Casona
+		    			 				<br>
+		    			 		
+		    			 				San Jerónimo
+		    			 				<br>
+		    			 	
+		    			 				20 personas
+		    			 				<br>
+		    			 				$2.000.000cop
+		    			 			</p>
+		    			 		</figcaption>
+		    			  </figure>
+		    			</div>
+		    		</div>  
+		     </article>
+            </section>
+		
+      	   <section class="section__box--green ">
+      		   <article>
+					<h1 class="text-center">MÁS FAVORABLES </h1>
+							<br>
+							<br>
+					<div class="container justify-content pie ">
+						<div class="box flex-grow1 ">
+							<figure >
+								<a href="FINCA SELECCIONADA POPULAR">
+               		 			<img  src="imagenes/masfavo1.jpg"class="popularesfavorable__imagen1 scale" ></a>
+		     					<figcaption>
+		    			 			<p>
+		    			 				Finca El Paraiso 
+		    			 				<br>
+		    			 		
+		    			 				Santa fé, Ant
+		    			 				<br>
+		    			 	
+		    			 				10 personas
+		    			 				<br>
+		    			 				$1.100.000cop
+		    			 			</p>
+		    			 		</figcaption>
+		    			  </figure>
+		    			</div>
+		    			<div class=" box flex-grow2">
+							<figure>
+								<a href="FINCA SELECCIONADA POPULAR">
+               		 			<img  src="imagenes/masfavo2.jpg"alt class="popularesfavorable__imagen2 scale"></a>
+		     					<figcaption>
+		    			 			<p>
+		    			 				Finca Maderos
+		    			 				<br>
+		    			 		
+		    			 				Jardín
+		    			 				<br>
+		    			 	
+		    			 				8 personas
+		    			 				<br>
+		    			 				$980.000cop
+		    			 			</p>
+		    			 		</figcaption>
+		    			  </figure>
+		    			</div>
+		    			<div class=" box flex-grow2">
+							<figure>
+								<a href="FINCA SELECCIONADA POPULAR">
+               		 			<img  src="imagenes/masfavo3.jpg"alt class="popularesfavorable__imagen3 scale"></a>
+		     					<figcaption>	
+		    			 				<p>Finca Atardecer
+		    			 				<br>
+		    			 		
+		    			 				San Jerónimo
+		    			 				<br>
+		    			 	
+		    			 				15 personas
+		    			 				<br>
+		    			 				$1.200.000cop
+		    			 			</p>
+		    			 		</figcaption>
+		    			  </figure>
+		    			</div>
+					</div>
+		      	 	<input type="submit"value="VER MÁS">
+		      	</article>
+	   	 </section>	
+	   
+	
+		<section class="pie">
+			<div class="bgLight ">
+				<H2 class="text-center">RECIBE INFORMACION EXCLUSIVA</H2>
+				<form action="envio.php" method="post">
+					<fieldset>
+						<legend>DATOS PERSONALES</legend>
+						<br>
+						<br>
+						<label for="nombre">Nombre y Apellido:</label>
+						<i>
+							<input type="text" placeholder="Adriana juares"name="nombre" id="nombre">
+						</i>
+							<br>
+							<br>
+							<label for="email">Email:</label>
+						<i>
+							<input type="email" placeholder="Adriana.juares@gmail.com"name="email" id="email">
+						</i>	
+							<br>
+							<br>
+							<label for="numero celular">Número Celular:</label>
+	
+						<i>
+							<input type="number" placeholder="310560480"name="number" id="number">
+						</i>
+							<br>
+							<br>
+							<input type="submit"value="REGISTRAR">
 
-	<div>caja contenedora</div>
-
-	<header>encabezado </header>
-    
-
-    <nav>boton para navegar dentro de la web</nav> 
-	<main>contenido central</main>
-    <section>define una seccion
-    <article>va detro de la sesion</article>
-    <article><strong>siguen estando dentro </strong>de la sesión</article>
-
-    </section>
-    <aside>info que va a l costado mas que todo utilizado para publicidad</aside>
-
-    <br>
-    <footer>pie con <b><i>as redes sociales:</b></i>l mapa de como llegar, formularios etc</footer>
-
-</body>
+					</fieldset>
+			    </form>
+			</div>
+		</section>
+	</main>
+		<br>
+		<br>
+		<br>
+		<footer class="text-left text-bold" id="final">
+			<div class="pie  container justify-content">
+				<br>
+				<div>
+					<h2>CONTÁCTENOS</h2>
+					<p>TEL: (+57)390 422 6030</p>
+					<br>
+					<p>correo: fincaspaisas@gmail.com</p>
+					<br>
+					<p>Ubicación: Medellín</p>
+					<br>
+				</div>
+				<div>
+					<h2>ACERCA DE</h2>
+					<P>Pasos para reservar</P>
+					<P>Preguntas frecuentes</P>
+					<P>Manual de políticas de privacidad y tratamiento de datos</P>
+					<p>Terminos, condiciones de uso, cancelaciones y reembolsos</p>
+				</div>
+				<div>
+					<h2 >REDES SOCIALES</h2>
+					<a class="text-right" href="https://facebook.com"target="_blank">
+					<img src="imagenes/facelogo2.png" alt="siguenos en facebook" class="pie__icon--smface "></a>
+					<a href="https://www.instagram.com">
+					<img src="imagenes/logoinsta2.png" alt="siguenos en instagram" class="pie__icon--sminst "></a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
